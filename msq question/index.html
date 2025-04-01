@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Choice Quiz</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+<div class="quiz-container">
+    <h1>Multiple Choice Quiz</h1>
+  <div id="question1" class="question">
+    <p>1. What is the capital of France?</p>
+    <ul class="options">
+      <li><input type="radio" name="q1" value="A" id="q1A"> <label for="q1A">Berlin</label></li>
+      <li><input type="radio" name="q1" value="B" id="q1B"> <label for="q1B">Madrid</label></li>
+      <li><input type="radio" name="q1" value="C" id="q1C"> <label for="q1C">Paris</label></li>
+      <li><input type="radio" name="q1" value="D" id="q1D"> <label for="q1D">Rome</label></li>
+    </ul>
+    <button class="button" onclick="nextQuestion(1)">Next</button>
+  </div>
+
+  <div id="question2" class="question hidden">
+    <p>2. Which language is primarily used for web development?</p>
+    <ul class="options">
+      <li><input type="radio" name="q2" value="A" id="q2A"> <label for="q2A">C++</label></li>
+      <li><input type="radio" name="q2" value="B" id="q2B"> <label for="q2B">Java</label></li>
+      <li><input type="radio" name="q2" value="C" id="q2C"> <label for="q2C">HTML</label></li>
+      <li><input type="radio" name="q2" value="D" id="q2D"> <label for="q2D">Python</label></li>
+    </ul>
+    <button class="button" onclick="nextQuestion(2)">Next</button>
+  </div>
+
+  <div id="question3" class="question hidden">
+    <p>3. What is the largest planet in our solar system?</p>
+    <ul class="options">
+      <li><input type="radio" name="q3" value="A" id="q3A"> <label for="q3A">Earth</label></li>
+      <li><input type="radio" name="q3" value="B" id="q3B"> <label for="q3B">Jupiter</label></li>
+      <li><input type="radio" name="q3" value="C" id="q3C"> <label for="q3C">Mars</label></li>
+      <li><input type="radio" name="q3" value="D" id="q3D"> <label for="q3D">Saturn</label></li>
+    </ul>
+    <button class="button" onclick="nextQuestion(3)">Next</button>
+  </div>
+
+  <div id="question4" class="question hidden">
+    <p>4. Which element has the chemical symbol 'O'?</p>
+    <ul class="options">
+      <li><input type="radio" name="q4" value="A" id="q4A"> <label for="q4A">Oxygen</label></li>
+      <li><input type="radio" name="q4" value="B" id="q4B"> <label for="q4B">Gold</label></li>
+      <li><input type="radio" name="q4" value="C" id="q4C"> <label for="q4C">Iron</label></li>
+      <li><input type="radio" name="q4" value="D" id="q4D"> <label for="q4D">Copper</label></li>
+    </ul>
+    <button class="button" onclick="nextQuestion(4)">Next</button>
+  </div>
+
+  <div id="question5" class="question hidden">
+    <p>5. Who wrote "To Kill a Mockingbird"?</p>
+    <ul class="options">
+      <li><input type="radio" name="q5" value="A" id="q5A"> <label for="q5A">Harper Lee</label></li>
+      <li><input type="radio" name="q5" value="B" id="q5B"> <label for="q5B">J.K. Rowling</label></li>
+      <li><input type="radio" name="q5" value="C" id="q5C"> <label for="q5C">Mark Twain</label></li>
+      <li><input type="radio" name="q5" value="D" id="q5D"> <label for="q5D">Ernest Hemingway</label></li>
+    </ul>
+    <button class="button" onclick="submitQuiz(5)">Submit</button>
+  </div>
+
+  <div id="result" class="result hidden"></div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
